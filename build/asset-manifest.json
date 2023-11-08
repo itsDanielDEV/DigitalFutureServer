@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.93493bc5.css",
+    "main.js": "/static/js/main.bb9df4ba.js",
+    "static/js/787.d2e5cb24.chunk.js": "/static/js/787.d2e5cb24.chunk.js",
+    "static/media/banner-telefono.png": "/static/media/banner-telefono.782cbd17a1a94bb48946.png",
+    "static/media/favicon.png": "/static/media/favicon.355d79663c71b33b1fce.png",
+    "static/media/banner-audifonos.png": "/static/media/banner-audifonos.6ab231d670031cdf2f49.png",
+    "static/media/banner-smartwatch.png": "/static/media/banner-smartwatch.2feed79ab618cc88c717.png",
+    "static/media/lock.jpg": "/static/media/lock.978b018c4b359577ea53.jpg",
+    "index.html": "/index.html",
+    "static/media/CartIcon.svg": "/static/media/CartIcon.e9b4ac53fa72d61c1a14f070a7f95dd9.svg",
+    "static/media/HamburguerBarIcon.svg": "/static/media/HamburguerBarIcon.a4b187252e73b2099b9aeddc527ca2db.svg",
+    "static/media/PersonCircleIcon.svg": "/static/media/PersonCircleIcon.b163606d52eee481f7614efd661edd86.svg",
+    "static/media/LeftArrowIcon.svg": "/static/media/LeftArrowIcon.fe58bfc9e4e3526455b27f9e3763f0e2.svg",
+    "main.93493bc5.css.map": "/static/css/main.93493bc5.css.map",
+    "main.bb9df4ba.js.map": "/static/js/main.bb9df4ba.js.map",
+    "787.d2e5cb24.chunk.js.map": "/static/js/787.d2e5cb24.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93493bc5.css",
+    "static/js/main.bb9df4ba.js"
+  ]
+}
