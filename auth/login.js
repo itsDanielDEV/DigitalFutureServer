@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const { MongoClient } = require("mongodb");
 const jwt = require("jsonwebtoken");
-const argon2 = require("argon2");
 
 // const connection = new MongoClient("mongodb://localhost:27017");
 const connection = new MongoClient(
@@ -19,7 +18,10 @@ router.post("/login", async (req, res) => {
       .collection("users")
       .findOne({ "client.email": email });
 
-    if (!find || !(await argon2.verify(find.client.password, password))) {
+    const decodedFind = jwt.verify(find.client.password, "hashedPassword");
+    //!(await argon2.verify(find.client.password, password)
+
+    if (!find || password !== decodedFind) {
       res.status(401).json({ error: "Invalid credentials." });
       return;
     }
