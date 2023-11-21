@@ -1,7 +1,7 @@
 const express = require("express");
 const { MongoClient } = require("mongodb");
 const router = express.Router();
-const bcrypt = require("bcrypt");
+const argon2 = require("argon2");
 
 // const connection = new MongoClient("mongodb://localhost:27017");
 const connection = new MongoClient(
@@ -11,7 +11,7 @@ const connection = new MongoClient(
 router.post("/logup", async (req, res) => {
   const { firstName, lastName, email, password, address } = req.body;
 
-  const hashedPassword = await bcrypt.hash(password, 10);
+  const hashedPassword = await argon2.hash(password);
 
   let user = {
     firstName,
